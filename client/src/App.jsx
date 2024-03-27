@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import React, { useState } from "react";
-import Accueil from "./pages/Accueil";
+import Accueil from "./pages/accueil/Accueil";
 import ÀPropos from "./pages/ÀPropos";
 import Faq from "./pages/Faq";
 import Connexion from "./pages/Connexion";
