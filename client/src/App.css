@@ -1,0 +1,100 @@
+/* Style général de l'application */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif; /* Utilisez la police de votre choix */
+}
+
+/* Style de la barre de navigation */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Réduit l'espacement intérieur */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Rend la barre de navigation semi-transparente */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(
+    10px
+  ); /* Effet de flou pour le fond derrière la navbar */
+}
+
+/* Conteneur pour les liens, les pousse vers la droite */
+.nav-links {
+  display: flex;
+  justify-content: flex-end; /* Pousse les liens vers la droite */
+  flex-grow: 1; /* Permet aux liens de prendre tout l'espace disponible */
+}
+
+/* Style pour le titre du site dans la barre de navigation */
+.nav .site-title {
+  font-weight: bold;
+  text-decoration: none;
+  color: #005f73; /* Couleur du texte pour le titre */
+  font-size: 24px;
+  flex-shrink: 0; /* Empêche le titre de se réduire */
+}
+
+/* Style pour les liens dans la barre de navigation */
+.nav a {
+  text-decoration: none;
+  color: #0077b6; /* Couleur des liens */
+  margin: 0 10px; /* Réduit l'espacement entre les liens */
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+/* Effet au survol pour les liens */
+.nav a:hover {
+  color: #023e8a; /* Couleur des liens au survol */
+}
+
+/* Ajout d'un effet de transition au survol du titre du site */
+.nav .site-title:hover {
+  color: #03045e; /* Changement de couleur au survol */
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown-content .dropdown-item {
+  color: black;
+  padding: 8px 0;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content .dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav-link,
+.dropdown span {
+  cursor: pointer;
+  color: #0077b6; /* Ajustez cette couleur pour correspondre à votre thème */
+  text-decoration: none;
+}
+
+/* Ajoutez un peu d'espacement entre les liens pour une meilleure lisibilité */
+.nav-links a:not(:last-child) {
+  margin-right: 15px;
+}
