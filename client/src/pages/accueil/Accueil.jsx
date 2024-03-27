@@ -44,12 +44,7 @@ const Accueil = () => {
         </div>
         <img src="https://images.pexels.com/photos/5428832/pexels-photo-5428832.jpeg?auto=compress&cs=tinysrgb&w=600" alt="FAQ image"></img>
       </section>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
+   
     </>
   )
 }
